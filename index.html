@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Popup Model</title>
+    <script src="https://kit.fontawesome.com/9031f83acd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="open-button">Click Me!</button>
+
+    <dialog class="page-1">
+        <div class="page-header">
+            <i class="fas fa-arrow-left arrow-page-one"></i>
+            <span class="header-text">Select Location</span>
+        </div>
+        <p class="sentence">
+            Select your delivery location to get started
+        </p>
+        <button class="location-btn">
+            <img src="./images/Group.png" alt="search" id="search-img" width="15.5px" height="15.5px" class="search-img">
+            <span class="btn-text">Use my current location</span>
+        </button>
+        <p class="text">OR</p>
+        <input class="search-input" type="search" placeholder="Search street, locality, etc">
+    </dialog>
+
+    <dialog class="page-2">
+        <div class="page-header">
+            <i class="fas fa-arrow-left arrow-page-one"></i>
+            <span class="header-text">Confirm Location</span>
+        </div>
+        <div class="container">
+            <div class="location-info">
+                <div id="confirm-input">
+                    <input type="text" name="" id="confirm-input-input">
+                    <button class="change">CHANGE</button>
+                </div>
+                <button class="confirm-location-btn">
+                    <img src="./images/Group.png" alt="search" class="confirm-img">
+                    <span class="confirm-text">Use my current location</span>
+                </button>
+                <button class="confirm-proceed">
+                    Confirm and Proceed
+                </button>
+            </div>
+            <div class="img-container">
+                
+            </div>
+        </div>
+    </dialog>
+
+    <script src="./app.js"></script>
+</body>
+</html>
